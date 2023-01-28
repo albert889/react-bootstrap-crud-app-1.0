@@ -4,6 +4,7 @@ import Home from './Components/Home';
 import Login from './Components/Login';
 import Registrasi from './Components/Registrasi';
 import ForgotPassword from './Components/ForgotPassword';
+import AddProduct from './Components/AddProduct';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/login" component={Login} />
         <Route path="/registrasi" component={Registrasi} />
         <Route path="/forgot-password" component={ForgotPassword} />
+        <Route path="/add-product" component={AddProduct} />
       </Router>
   );
 }
