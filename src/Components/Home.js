@@ -87,7 +87,7 @@ export default class Home extends Component {
                     <th>Nama Product</th>
                     <th>Deskripsi</th>
                     <th>Harga Beli</th>
-                    <th>harga Jual</th>
+                    <th>Harga Jual</th>
                     <th>Gambar</th>
                     <th>Action</th>
                   </tr>
