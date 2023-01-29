@@ -6,6 +6,7 @@ import { Table } from "reactstrap";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
 
 export default class Home extends Component {
   state = {
@@ -60,6 +61,12 @@ export default class Home extends Component {
       });
   };
 
+  // editData = (id) => {
+  //   db.collection("products")
+  //     .doc(id)
+  //     console.log("cok ",)
+  // }
+
   render() {
     console.log(this.state.user);
     const { displayName } = this.state.user;
@@ -109,9 +116,11 @@ export default class Home extends Component {
                           />{" "}
                         </td>
                         <td>
+                          <Link to={`/edit-product/${item.id}`}>
                           <Button className="mx-3" color="primary">
                             Edit
                           </Button>
+                          </Link>
                           <Button
                             color="danger"
                             onClick={() => this.deleteData(item.id)}
