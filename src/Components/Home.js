@@ -84,7 +84,6 @@ export default class Home extends Component {
               <Table>
                 <thead>
                   <tr>
-                    <th>ID</th>
                     <th>Nama Product</th>
                     <th>Deskripsi</th>
                     <th>Harga Beli</th>
@@ -97,7 +96,6 @@ export default class Home extends Component {
                   {this.state.data.map((item) => {
                     return (
                       <tr>
-                        <td>{item.id}</td>
                         <th width="300px">{item.productName}</th>
                         <td width="450px">{item.description}</td>
                         <td>{item.purchasePrice}</td>
